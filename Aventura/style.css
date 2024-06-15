@@ -60,7 +60,7 @@
     align-items: center;
 }
 
-.cont_princi button {
+.cont_button {
     border: none;
     border-bottom: none;
     color: #fff;
@@ -71,9 +71,65 @@
 }
 
 .info_button {
+    display: flex;
+    justify-content: center;
     margin-top: 15px;
 }
 
 img {
     box-shadow: 0px 0px 10px rgb(120, 9, 9);
+}
+
+@media ( max-width : 500px ){
+
+    .todo {
+        width: 100%;
+    }
+
+    .cont_princi {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #titulop {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .principal{
+        width: 100%;
+    }
+
+    .info_button {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width : 501px) and (max-width : 850px) {
+
+    .cont_princi {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px 30px;
+        justify-items: center;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .cont img {
+        width: 100%;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    .info_button {
+        margin-bottom: 30px;
+    }
+
 }
