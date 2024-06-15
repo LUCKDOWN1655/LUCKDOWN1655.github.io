@@ -107,8 +107,12 @@ img:hover {
         padding: 0;
     }
 
-    .info_text .info_text p {
+    .info_text {
         width: 100%;
+    }
+
+    .info_text p {
+        align-items: center;
     }
 
     .info img {
